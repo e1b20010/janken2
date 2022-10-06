@@ -16,9 +16,18 @@
     </div>
   </form>
   </p>
+
   <a href="/rock">ぐー</a>
   <a href="/scissors">ちょき</a>
   <a href="/paper">ぱー</a>
+
+  <p>
+  <div th:if="${hand}">
+    あなたの手 [[${hand}]]<br>
+    相手の手 Gu<br>
+    結果[[${result}]]<br>
+  </div>
+  </p>
 
 </body>
 
