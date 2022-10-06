@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JanKen GAME!</title>
+</head>
+
+<body>
+  <h1>JanKen GAME!</h1>
+
+  <p>
+  <form action="/index" method="get">
+    <div th:if="${nameResult}">
+      Hi [[${nameResult}]]
+    </div>
+  </form>
+  </p>
+  <a href="/rock">ぐー</a>
+  <a href="/scissors">ちょき</a>
+  <a href="/paper">ぱー</a>
+
+</body>
+
+</html>
