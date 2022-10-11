@@ -7,15 +7,17 @@
 </head>
 
 <body>
-  <h1>JanKen GAME!</h1>
 
-  <p>
-  <form action="/index" method="get">
-    <div th:if="${nameResult}">
-      Hi [[${nameResult}]]
-    </div>
-  </form>
-  </p>
+  <div><a href="/logout">ログアウト</a></div>
+  <h1>JanKen GAME!</h1>
+  <div th:if="${room}">
+    エントリー
+    <ul>
+      <li th:each="user : ${room.users}">[[${user}]]</li>
+    </ul>
+  </div>
+  Hi <span sec:authentication="name"></span>
+  </br>
 
   <a href="/rock">ぐー</a>
   <a href="/scissors">ちょき</a>
