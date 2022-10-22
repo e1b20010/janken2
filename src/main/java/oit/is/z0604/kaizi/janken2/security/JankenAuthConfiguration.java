@@ -29,7 +29,7 @@ public class JankenAuthConfiguration {
         .build();
     UserDetails user3 = users
         .username("ほんだ")
-        .password("$2y$10$S1jrjSt.YAzxVRvfCCrZE.yWKthprk6vLypp1XCZVzg5dZGP1YTGm")
+        .password("$2y$10$P0dvHqebethDAvym4fZxrO9h74OZwGPbPCDfdcVuBq3ZUygBgopu6")
         .roles("USER")
         .build();
     return new InMemoryUserDetailsManager(user1, user2, user3);
